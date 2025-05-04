@@ -1,7 +1,7 @@
 from typing import Any
-
+from Sort.sort import Sort  # Importing the Sort class from the sort module
 # Define a QuickSort class to implement the QuickSort algorithm
-class QuickSort:
+class QuickSort(Sort):
     # Method to sort an array in-place using QuickSort
     def sort(self, array: list[Any]) -> None:
         # Base case: if the array has 1 or fewer elements, it's already sorted
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     sorter = QuickSort()
 
     # Example array to be sorted
-    arr = [3, 6, 8, 10, 1, 2, 1]
+    arr = [True, False, True, False, True, False]
 
     # Print the original array and its length
     print("Original array:", arr, len(arr))
@@ -59,3 +59,5 @@ if __name__ == "__main__":
 
     # Print the sorted array and its length
     print("Sorted array:", arr, len(arr))
+    # Example array to be sorted
+    

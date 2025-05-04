@@ -1,7 +1,7 @@
 from typing import Any  # Importing the `Any` type from the `typing` module for type annotations.
-
+from Sort.sort import Sort  # Importing the `Sort` class from the `sort` module, which is presumably an abstract base class for sorting
 # Defining a class `MergeSort` that implements the merge sort algorithm.
-class MergeSort:
+class MergeSort(Sort):
     # Method to sort an array using merge sort.
     def sort(self, array: list[Any]) -> list[Any]:
         # Base case: if the array has 1 or no elements, it is already sorted.
